@@ -124,9 +124,10 @@ class TestCleanAndTransform:
         assert "_ingested_at" in result.columns
 
     def test_no_fully_null_rows(self, sample_raw_df):
-        # Add a fully null row
-        df_with_null = sample_raw_df.copy()
-        df_with_null.loc[len(df_with_null)] = [None] * len(df_with_null.columns)
+        # Create a new DataFrame by appending a fully null row to records
+        data = sample_raw_df.to_dict('records')
+        data.append({col: None for col in sample_raw_df.columns})
+        df_with_null = pd.DataFrame(data)
         result = clean_and_transform(df_with_null)
         # Should not contain fully null rows
         assert not result.isnull().all(axis=1).any()
