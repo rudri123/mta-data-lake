@@ -1,0 +1,4 @@
+transit_timestamp,station_complex_id,station_complex,borough,ridership,transfers,latitude,longitude,date,hour,day_of_week,_ingested_at
+2024-01-15 08:00:00,001,Times Sq-42 St,M,12500,450,40.758,-73.9855,2024-01-15,8,Monday,2026-03-21T20:09:03.774684+00:00
+2024-01-15 09:00:00,002,Grand Central-42 St,M,8300,320,40.7527,-73.9772,2024-01-15,9,Monday,2026-03-21T20:09:03.774684+00:00
+2024-01-15 10:00:00,003,34 St-Penn Station,M,9750,,40.7506,-73.9936,2024-01-15,10,Monday,2026-03-21T20:09:03.774684+00:00

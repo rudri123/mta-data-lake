@@ -1,0 +1,43 @@
+{
+  "run_id": "20260321_074204",
+  "timestamp": "2026-03-21T07:42:04.679918+00:00",
+  "status": "success",
+  "rows_fetched": 4,
+  "rows_processed": 3,
+  "validation": {
+    "total_rows": 4,
+    "total_columns": 8,
+    "null_counts": {
+      "transit_timestamp": 0,
+      "station_complex_id": 0,
+      "station_complex": 0,
+      "borough": 0,
+      "ridership": 0,
+      "transfers": 1,
+      "latitude": 0,
+      "longitude": 0
+    },
+    "duplicate_rows": 1,
+    "columns": [
+      "transit_timestamp",
+      "station_complex_id",
+      "station_complex",
+      "borough",
+      "ridership",
+      "transfers",
+      "latitude",
+      "longitude"
+    ],
+    "passed": true,
+    "issues": [
+      "1 duplicate rows detected"
+    ]
+  },
+  "s3_keys": {
+    "raw": "raw/subway/20260321_074204/mta_ridership_raw.csv",
+    "processed": "processed/subway/20260321_074204/mta_ridership_processed.csv",
+    "dry_run": true
+  },
+  "errors": [],
+  "raw_checksum": "9ca0ff0bc1cb3316d874916acc009a0c"
+}

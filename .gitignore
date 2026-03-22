@@ -15,7 +15,7 @@ build/
 
 # Data files (can be large)
 # Data files (can be large)
-data/
+
 
 # IDE
 .vscode/
